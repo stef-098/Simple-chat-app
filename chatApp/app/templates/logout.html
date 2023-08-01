@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <style>
+    *{
+    margin-top:10px;
+    text-align: left;
+    line-height: 2.1;
+    margin-left: 5px;
+    }
+    p{
+    font-size: 14pt;
+    font-family: 'calibri';
+    text-align: center;
+    }
+    a{
+    color: #3333ff;
+    text-decoration: none;
+    font-family: 'calibri';
+    }
+    </style>
+</head>
+<body>
+    <a href = "{% url 'login' %}">Login</a><br>
+    <a href = "{% url 'signup' %}">Signup</a>
+    <p>You have successfully logged out.</p><br>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+        margin-top: 10px;
+        }
+        h1{
+        font-size: 18pt;
+        text-align: center;
+        font-family: 'inter right';
+        }
+        label{
+        line-height: 3.5;
+        font-family: 'calibri';
+        margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login into your account</h1><br>
+    <form method="POST">
+    {{ form.errors }}
+    {% csrf_token %}
+	<label>Username: </label>
+    <input type = "text" name = "input_username" id = "input_username" style = "margin-left: 10px;"><br>
+    <label>Password: </label>
+    <input type = "password" name = "input_password" id = "input_password" style = "margin-left: 13.5px;"><br>
+	<input type = "submit" value ="Login" id = "login" style = "margin-top: 30px; margin-left: 20px;">
+</form>
+</body>
+</html>

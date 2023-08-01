@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+    *{
+    margin-top:10px;
+    text-align: left;
+    line-height: 2.1;
+    margin-left: 5px;
+    }
+    label, p{
+    font-size: 12pt;
+    font-family: 'calibri';
+    }
+    
+    </style>
+</head>
+<body>
+    {% block content %}
+    <p>An OTP is sent to the inputted phone number, please check your phone for an incoming OTP!</p>
+    <form method="POST">
+        {% csrf_token %} 
+        <label>OTP: </label>
+        <input type = "text" name = "number" id = "number">
+        <input type = "submit" id = "number" value = "Confirm OTP">
+    </form>
+    {% endblock %}
+</body>
+</html>

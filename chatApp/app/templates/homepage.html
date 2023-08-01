@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin-left:30px;
+        }
+        h1{
+        font-size: 18pt;
+        text-align: center;
+        font-family: 'inter right';
+        }
+        p {
+        font-family: 'calibri';
+        font-size: 13pt;
+        font-weight: bold;
+
+        }
+        div {
+        text-align: left;
+        line-height: 1.8;
+        padding-left: 80px;
+        }
+        a {
+            color: #3333ff;
+            text-decoration: none;
+            font-family: 'calibri';
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Chatapp!</h1><br>
+    <div>
+        <p>Features: </p>
+        <a href = "{% url 'signup' %}">Sign up</a><br>
+        <a href = "{% url 'login' %}">Login</a>
+    </div>
+</body>
+</html>

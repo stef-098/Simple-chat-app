@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+        margin-top:10px;
+        }
+        h1{
+        text-align: center;
+        font-size: 18pt;
+        font-family: 'inter-right';
+        }
+        label{
+        font-size: 12pt;
+        font-family: 'calibri';
+        }
+        div {
+        text-align: left;
+        line-height: 2.1;
+        margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Create an account</h1><br>
+    <ul>Requirements for passwords and username:
+    <li>Must contain special characters</li>
+    <li>Must contain numbers</li>
+    <li>Must contain lowercase letters</li>
+    <li>Must contain uppercase letters</li>
+    </ul>
+    
+    <br>
+    <form method="POST">
+		{% csrf_token %}
+        {{forms.error}}
+		{{ form }}                    
+		<input value ="Register" type="submit">
+	</form>
+    </div>
+</body>
+</html>

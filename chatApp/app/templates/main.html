@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <style>
+    *{
+    margin-top:10px;
+    text-align: left;
+    line-height: 2.1;
+    margin-left: 5px;
+    }
+    p{
+    font-size: 14pt;
+    font-family: 'calibri';
+    }
+    a{
+    color: #3333ff;
+    font-family: 'calibri';
+    }
+    h1{
+    font-family: 'inter-right';
+    font-size: 15pt;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{ name }} </h1>
+    <a href = "{% url 'logout' %}">Logout</a><br>
+    <a href = "{% url 'convo' %}">Join a chat room</a>
+</body>
+</html>
